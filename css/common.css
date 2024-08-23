@@ -14,48 +14,48 @@ body {
 }
 /*Görev1 css*/
 /* Ana kategoriler için stil */
+
+.categoriescss {
+  list-style: none;
+}
+h2 {
+  font-weight: 600;
+}
 #categories {
-  list-style: none; /* Liste simgelerini kaldır */
-  padding: 0; /* İç kenar boşluğunu kaldır */
-  margin: 0; /* Dış kenar boşluğunu kaldır */
-  max-width: 600px; /* Maksimum genişlik belirle */
-  margin: 20px auto; /* Ortala */
-  background-color: #f4f4f4; /* Arka plan rengi */
-  border-radius: 8px; /* Kenarları yuvarla */
-  padding: 20px; /* İç kenar boşluğu ekle */
+  display: inline-flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 8px;
 }
-
-/* Her kategori (li.item) için stil */
-.item {
-  margin-bottom: 20px; /* Alt boşluk */
-  padding-bottom: 10px; /* Alt iç boşluk */
-  border-bottom: 2px solid #ddd; /* Alt çizgi */
-}
-
-/* Kategori başlıkları (h2) için stil */
-.item h2 {
-  font-size: 24px; /* Yazı boyutu */
-  margin-bottom: 10px; /* Alt boşluk */
-  color: #333; /* Yazı rengi */
-}
-
-/* Alt öğeler (ul) için stil */
-.item ul {
-  list-style-type: disc; /* Noktalı liste işareti */
-  padding-left: 20px; /* Sol iç boşluk */
-  margin-top: 10px; /* Üst boşluk */
-}
-
-/* Alt öğe maddeleri (li) için stil */
 .item ul li {
-  font-size: 18px; /* Yazı boyutu */
-  margin-bottom: 5px; /* Alt boşluk */
-  color: #555; /* Yazı rengi */
+  list-style: none;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
 }
-
-/* Hover (fare üzerine gelince) efekti */
-.item:hover {
-  background-color: #e9ecef; /* Arka plan rengi değişikliği */
+.item {
+  background: #f5f4fa;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+.item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+  max-height: max-content;
+}
+.listcopy {
+  padding-left: 0px;
 }
 /*Görev2 Css*/
 .gallery {
