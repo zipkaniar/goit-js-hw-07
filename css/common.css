@@ -136,11 +136,12 @@ input:hover {
   background: #6c8cff;
 }
 .login-form button:nth-last-child(1) {
-  background: #4E75FF;
+  background: #ff4e4e;
 }
 .login-form button:nth-last-child(1):hover {
-  background: #6C8CFF;
+  background: #ff7070;
 }
+
 .buttons {
   display: flex;
   gap: 12px;
@@ -148,4 +149,87 @@ input:hover {
 .clicks {
   display: flex;
   gap: 12px;
+}
+/*Görev5 Css */
+.change-color {
+  width: 148px; /* Hug (148px) */
+  height: 40px; /* Hug (40px) */
+  padding: 8px 16px; /* padding: 8px 16px 8px 16px */
+  gap: 10px;
+  border-radius: 8px ;
+  background: #4E75FF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #FFFFFF; /* Metin rengini beyaz olarak ayarladım */
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.change-color:hover {
+  background-color: #3c5dc1; /* Hover durumu için biraz daha koyu bir renk */
+}
+/*Görev6 Css */
+#controls{
+  display: flex;
+  gap: 10px;
+  background: #F6F6FE;
+  width: max-content;
+  padding: 32px;
+  gap: 16px;
+}
+
+button{
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  background-color: #4E75FF;
+  color: #FFFFFF;
+}
+button:hover{
+  background: #6C8CFF;
+}
+/* Destroy butonunu kırmızı yapma */
+button[data-destroy] {
+  background-color: #FF4E4E; /* Kırmızı arka plan */
+}
+
+button[data-destroy]:hover {
+  background-color: #FF7070; /* Hover durumu için daha açık kırmızı */
+}
+
+
+input{
+  padding: 8px 16px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #808080;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  background-color: transparent;
+  text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#boxes{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
